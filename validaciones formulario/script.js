@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         
         if (username.length < 4 || username.length > 10) {
             alert("El nombre de usuario debe tener entre 4 y 10 caracteres.");
-            event.preventDefault(); //esto evita que se mande el form
+            event.preventDefault(); //esto evita que se mande el formulario
             return;
         }
 
