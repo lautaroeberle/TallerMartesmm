@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Responsive Owl-Carousel Slider | CodingNepal</title>
+      <link rel="stylesheet" href="style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="carousel owl-carousel">
+            <div class="card card-1">
+               IMAGEN1
+            </div>
+            <div class="card card-2">
+               IMAGEN2
+            </div>
+            <div class="card card-3">
+               IMAGEN3
+            </div>
+            <div class="card card-4">
+               IMAGEN4
+            </div>
+            <div class="card card-5">
+               IMAGEN5
+            </div>
+         </div>
+      </div>
+      <script>
+         $(".carousel").owlCarousel({
+           margin: 20,
+           loop: true,
+           autoplay: true,
+           autoplayTimeout: 2000,
+           autoplayHoverPause: true,
+           responsive: {
+             0:{
+               items:1,
+               nav: false
+             },
+             600:{
+               items:2,
+               nav: false
+             },
+             1000:{
+               items:3,
+               nav: false
+             }
+           }
+         });
+      </script>
+   </body>
+</html>
